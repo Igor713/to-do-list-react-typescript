@@ -1,0 +1,47 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hide {
+  display: none;
+}
+
+.fade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+}
+
+.modal {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modal h2 {
+  margin-bottom: 1em;
+}
+
+.modal form {
+  width: 90%;
+}

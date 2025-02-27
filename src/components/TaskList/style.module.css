@@ -1,0 +1,66 @@
+/* Container das tarefas */
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Estilo do card de tarefa */
+.taskCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.taskCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Informações da tarefa */
+.taskInfo h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.taskInfo p {
+  margin: 0.5rem 0 0;
+  color: #666;
+}
+
+/* Ações (ícones) */
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Ícone de edição */
+.edit {
+  color: #4caf50;
+}
+
+.edit:hover {
+  color: #388e3c;
+}
+
+/* Ícone de exclusão */
+.delete {
+  color: #f44336;
+}
+
+.delete:hover {
+  color: #d32f2f;
+}
